@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+h1#txt-princ{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 7vw;
+    z-index: 8;
+    text-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.434);
+}
+span.txt-orange{
+    color: #FF8918;
+}
+div.txt-center{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10vw;
+    z-index: 10;
+    background-color: rgba(255, 0, 0, 0);
+}
+#txt-c-h2{
+    color: #8F8F8F;
+    font-weight: normal;
+    text-align: center;
+    width: 60%;
+    margin-top: 20vw;
+    text-shadow: 0vw 0vw 1vw black;
+}
+.arrow-container {
+  position: absolute;
+  bottom: 5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  stroke: #FF8918;
+}
+
+.arrow-down {
+  animation: bounce 2s infinite ease-in-out;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 48vw; 
+    z-index: 4;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+}
+
+section#frase-motivacional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vw;
+    background-color:#FF8918 ;
+    color: black;
+}
+section#frase-motivacional h1{
+    font-weight: bolder;
+    width: 60%;
+    text-align: center;
+}
+
+section#treinos{
+    width: 100%;
+    height: 60vw;
+    background-color: black;
+    color: white;
+}
+section#treinos > h1{
+    text-align: center;
+    padding-top: 6vw;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+section#treinos > h2{
+    text-align: center;
+    padding-top: 1.5vw;
+    font-size: 1.5vw;
+    font-weight: normal;
+    width: 60%;
+    margin: auto;
+    color: #8F8F8F;
+}
+
+
+@media (max-width: 768px) {
+  h1#txt-princ {
+    font-size: 11vw;
+    margin-top: 46vw;
+  }
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    display: flex;
+    height: 190vw; /* tela inteira */
+    z-index: 4;
+    margin-bottom: 0px;
+  }
+  #txt-c-h2 {
+    font-size: 5vw;
+    width: 90%;
+    margin-top: 92vw;
+  }
+  
+  .arrow-container {
+    bottom: 30vw;
+  }
+  
+  .arrow-down {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  section#frase-motivacional{
+    height: 52vw;
+  }
+  section#frase-motivacional h1{
+    width: 90%;
+    font-size: 7vw;
+    font-weight: bolder;
+    margin: 0px;
+  }
+  section#treinos{
+
+  }
+}
